@@ -1,7 +1,7 @@
 .text-first {
     left: 39px;
     top: 111px;
-    padding-left: 145px;
+    padding-left: 177px;
     position: absolute;
     font-weight: 700 !important;
     font-size: 54px !important;
@@ -12,13 +12,14 @@
 
 .header {
     margin-top: 10px;
+    width: 100%;
 }
 
 .mobileimage {
     position: absolute;
     width: 536px;
     height: 468px;
-    left: 648px;
+    left: 656px;
     top: 54px;
 }
 
@@ -26,8 +27,10 @@
     position: absolute;
     width: 232.24px;
     height: 153.58px;
-    left: 515.75px;
-    top: 66.14px;
+    left: 552.75px;
+    top: 44.14px;
+    z-index: 64;
+    background: transparent;
 }
 
 .rectangle-image {
@@ -48,17 +51,17 @@
 
 .cycle-image {
     position: absolute;
-    top: -163%;
-    left: -16%;
-    width: 50%;
-    height: 244px;
+    top: -159%;
+    left: -38%;
+    width: 118%;
+    height: 242px;
     background: transparent;
 }
 
 .scooter {
     width: 166px;
     height: 113px;
-    left: 1243px;
+    left: 86%;
     background: transparent;
     top: 0;
     transition-delay: 1s;
@@ -78,9 +81,18 @@
 
 .content-text-color {
     color: #17B57C;
-    background: transparent;
+    background: tr;
 }
 
+@media only screen and (max-width:800px) and (min-width:768px) {
+    .scooter {
+        visibility: hidden;
+    }
+
+    .cycle {
+        background: transparent;
+    }
+}
 
 
 @media screen and (max-width: 800px) {
@@ -95,9 +107,9 @@
 
     .mobileimage {
         position: absolute;
-        width: 736px;
+        width: 756px;
         height: 778px;
-        left: 243px;
+        left: 250px;
         top: 400px;
     }
 
